@@ -1,0 +1,26 @@
+4. Побудувати машину Тюрінга clearEndOne, яка стирає останній символ вхідного слова в алфавіті T = {a,b}. 
+
+name: clearEndOne
+init: q0
+accept: qAccept
+
+q0,a
+q1,a,>
+
+q0,b
+q1,b,>
+
+q1,a
+q1,a,>
+
+q1,b
+q1,b,>
+
+q1,_
+q2,_,<
+
+q2,a
+qAccept,_,-
+
+q2,b
+qAccept,_,-

@@ -1,0 +1,23 @@
+1.  Машина  Тюрінга для інкременту двійкового числа.
+
+name: Binary Increment
+init: q0
+accept: qAccept
+
+q0,0
+q0,0,>
+
+q0,1
+q0,1,>
+
+q0,_
+q1,_,<
+
+q1,1
+q1,0,<
+
+q1,0
+qAccept,1,-
+
+q1,_
+qAccept,1,-
